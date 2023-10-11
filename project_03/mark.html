@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 5</title>
+   <link rel="stylesheet" href="reset.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+   <link rel="stylesheet" href="mark.css" />
+</head>
+
+
+<body>
+
+<section><h3>Data</h3><table>
+<caption>Orders
+<thead><tr>
+      <th scope="col" title="Id">Id</th>
+      <th scope="col" title="Date">Date</th>
+      <th scope="col" title="Customer">Customer</th>
+      <th scope="col" title="Country">Country</th>
+      <th scope="col" title="Progress">Progress</th>
+      <th scope="col" title="Status">Status</th>
+</tr></thead>
+<tbody>
+  <tr><td>123<td>Sep 12, 2017<td>Jean Rousseau<td>France
+      <td><progress value="100" max="100">100<td><span class="status status-shipped">Shipped</span>
+
+  <tr><td>144<td>Sep 20, 2017<td>Georg Hegel<td>Germany
+      <td><progress value="100" max="100">100<td><span class="status status-shipped">Shipped</span>
+
+  <tr><td>149<td>Oct 3, 2017<td>John Locke<td>England
+      <td><progress value="50"  max="100">100<td><span class="status status-processing">Processing</span>
+
+  <tr><td>162<td>Oct 8, 2017<td>Thomas Hobbes<td>England
+      <td><progress value="25"  max="100">100<td><span class="status status-pending">Pending</span>
+
+	<tr><td>177<td>Oct 10, 2017<td>Johann Fichte<td>Germany</td>
+	   <td><progress  value="25"  max="100">100<td><span class="status status-pending">Pending</span>
+</tbody>
+</table></section>
+
+<section><h3>Revise</h3>
+  <form method="GET" action="https://www.randyconnoly.com/tests/process.php">
+  <fieldset>
+  <p><legend>Filter Orders</legend>
+  <p><label>Title<input type="text" name="title"/>
+  <p><label>Country
+    <select name="country">
+     <option>Choose:
+     <option>Canada
+     <option>Finland
+     <option>USA
+   </select>
+  <p><label>Status
+      <input type="radio" name="status" value="pending">pending
+      <input type="radio" name="status" value="pending">pending
+            <input type="radio" name="status" value="pending">pending
+  <p><label>Order Date
+</fieldset></form>
+</section>
+</body>
+</html>
